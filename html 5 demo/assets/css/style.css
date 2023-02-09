@@ -1,0 +1,51 @@
+/* html 5 demo CSS File     */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+  /* Start of "Micro clearfix" */
+  
+  .cf {
+    zoom: 1;
+  }
+  .cf:before,
+  .cf:after {
+    content: "";
+    display: table;
+  }
+  .cf:after {
+    clear: both;
+  }
+
+  main{
+    width: 960px;
+    margin: 30px;
+    background-image:url(../img/grid.png);
+  }
+
+  header.primary, footer.primary{
+    width:900px;
+    margin:30px;
+    background-color: rgba(245, 245, 220, 0.377);
+    float:left;
+    padding:20px;
+
+  }
+
+  #blog, aside{
+    background-color: rgba(0, 255, 255, 0.507) ;
+    width:435px;
+    float:left;
+    margin-left: 30px;
+    
+  }
+  
+  /* End of "Micro clearfix" */
+  
