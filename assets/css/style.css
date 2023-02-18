@@ -7,6 +7,15 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+    
+  }
+
+  html * {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    line-height: 1.625;
+    color:rgb(14, 27, 88);
+    -webkit-text-stroke: .01rem rgb(252, 251, 247); 
   }
   
   /*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -29,15 +38,13 @@ html {
 /* Max width:
 1900
  px
-Columns:
-8
- cols
-Gutter width:
-20
- px
-Margin width:
-20
- px
+Columns: width 215 px
+8 cols
+
+Gutter width: 20 px
+
+Margin width: 20px
+
 Page width: 1900 px
 Column width: 215 px */
 
@@ -47,9 +54,10 @@ Column width: 215 px */
     width: 1900px;
     margin: 20px;
     background-image:url(../resources/headerbanner.JPG);
-	background-repeat: no-repeat;
-	background-size:cover;
+	  background-repeat: no-repeat;
+    background-size:cover;
     border:1px solid black;
+    /* display: flex; */
   }
 
   header.primary, footer.primary{
@@ -57,28 +65,69 @@ Column width: 215 px */
     width:97.89%;
     /* margin:30px; 30/1900 */
     /* margin:60px; */
-    background-color: rgba(245, 245, 220, 0.377);
+    /* background-color: rgba(10, 66, 170, 0.658); */
     float:left;
-	margin-left: 20px;
+	  margin-left: 25px;
     /* padding:20px; */
     padding:2.22%;
+    /* display: flex; */
 
   }
 
   #blog, aside{
-    background-color: rgba(0, 255, 255, 0.219) ;
-    /* width:435px; 435/958 */
-    width:35%;
+    /* background-color: rgba(208, 255, 0, 0.288) ; */
+    /* width:435px; 435/958 35 %*/
+    width:550px;
     float:left;
     /* margin-left: 30px; 30/958 */
-    margin-left:1.05%;
-	margin-right: 255PX;
+    margin-left:7.08%;
+	  margin-right: 255PX;
     padding:3.42%;
+    /* display:grid; */
+   
 	
   }
 
+  
+ 
 
+  .frame{
+    width:420px;
+    height:240px;
+    background-image: url("https://www.youtube.com/embed/MNaCJGV2jN4");
+  }
 
+  /* Header Elements */
+
+  header.primary nav {
+
+     margin: 5px auto;
+     
+  }
+
+  header.primary h1 {
+    font-size: 3rem;
+    display:flex;
+    justify-content: center;
+    color:rgb(19, 17, 17);
+  }
+/* Center elements */
+  header.primary nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+/* space between elements */
+header.primary nav ul li{
+  margin:0 1.5rem;
+  font-size: 5.0 rem;
+}
+header.primary nav ul li a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:rgb(19, 17, 17);
+}
 
 
 
@@ -87,27 +136,36 @@ Column width: 215 px */
    /* can not exceed 600px" */
   @media screen and (max-width:600px)  {
 	main{
-		background-image:url(../img/Gold\ Flamingo.jpg);
+	  
 		font-family: 'Anton', sans-serif;
-
+    display:inline;
 	} 
 	p{
-		color: azure;
+		color: rgb(128, 99, 7);
 	}
+  body{
+    background-image:url(../img/Gold\ Flamingo.jpg);
+  }
+
+  
+  
   } 
 
   /* Ranged */ 
 
 @media screen and (max-width: 1900px) and (min-width: 600px) {
-	#blog,aside{
-		grid-template-columns: repeat(2,1fr);
+	.blog{
+		display:inline-block; 
+    width:100%;
+     min-width:200px; 
+     max-width:340px;
 	} 
 }
 
 /* Min Width Querey */
 @media screen and (max-width: 600px){
 	#blog,aside{
-		grid-template-columns: repeat(4,1fr);
+		grid-template-columns: 1fr;
 	} 
 }
   /* End of "Micro clearfix" */
