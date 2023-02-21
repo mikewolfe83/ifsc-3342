@@ -6,16 +6,35 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+
     
+  }
+
+  html *{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.625;
+    color:rgb(7, 146, 232);
+    -webkit-text-stroke: .01rem rgb(236, 236, 237);
   }
 
   body{
-    font-family: 'Oswald', sans-serif;
-    background-color: darkgrey;
-    
+    background:url(../img/office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
+
+
+  /* article{
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: azure;
+  } */
+
   header{
+
+    background-color: rgba(8, 8, 8, 0.53);
+    
   
   }
   
