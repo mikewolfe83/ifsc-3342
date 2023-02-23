@@ -1,0 +1,75 @@
+/* html 5 demo CSS File     */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+  /* Start of "Micro clearfix" */
+  
+  .cf {
+    zoom: 1;
+  }
+  .cf:before,
+  .cf:after {
+    content: "";
+    display: table;
+  }
+  .cf:after {
+    clear: both;
+  }
+
+  main{
+    width: 958px; 
+    /* margin: 30px; */
+    background-image:url(../img/grid.png);
+    border:1px solid black;
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-gap: 30px;
+    padding: 30px;
+  }
+
+  header.primary{
+  grid-column: 1 / span 10; 
+    
+  background-color: rgba(220, 236, 245, 0.836);
+   padding-left: 300px;
+  }
+#content{
+  grid-column: 1 / 10; 
+  display:grid;
+  grid-template-columns:repeat(10,1fr);
+}
+
+#blog{
+     padding: 8px 8px 8px 8px;
+    grid-column: 1 / 6; 
+    background-color: rgba(0, 255, 255, 0.507) ;
+   
+  }
+
+  aside{
+
+    padding: 8px 8px 8px 8px;
+    grid-column: 7/ 11;
+    background-color: rgba(0, 255, 255, 0.507) ;
+  }
+
+  footer.primary{
+    padding-left: 300px;
+    grid-column: 1 / span 10; 
+    
+  background-color: rgba(220, 236, 245, 0.836);
+
+  }
+
+
+  
+  /* End of "Micro clearfix" */
+  
