@@ -71,8 +71,10 @@ html {
   .container{
     margin:0 auto;
     background:rgba(54, 115, 228, 0.15);
-    width:480px;
+    
   } 
+
+  
 
   /* ------ Helper Classes -------*/
 .visuallyhidden {
@@ -103,6 +105,7 @@ html {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding:20px 20px 10px 20px;
     width: 480px;
+    margin:auto
   }
 
  nav a{
@@ -253,4 +256,73 @@ html {
 .footer{
   text-align:center;
   padding:20px 0;
+}
+
+/* Reorder Source Using Grid */
+
+main.container{
+  display:grid;
+  grid-template-areas: 
+      "title"
+      "about"
+      "experience"
+      "education"
+      "skills";
+}
+
+.page-title{
+  grid-area: title;
+}
+#about{
+  grid-area: about;
+}
+#skills{
+  grid-area: skills;
+}
+#experience{
+  grid-area: experience;
+}
+#education{
+  grid-area: education;
+}
+
+/* -------- Media Queries --------- */
+
+@media screen and (min-width:768){
+    main.container{
+      max-width: 900px;
+      grid-template-columns: 36.5% auto;
+      grid-template-areas: 
+          "title title"
+          "about about"
+          "skills experience"
+          ". education";
+    }
+     
+    header.container{
+      max-width: 980px;
+    }
+ 
+   /* Nested Grid */
+
+   #about{
+    display: grid;
+    grid-gap:2em;
+    grid-template-columns: 300px 1fr auto;
+    grid-template-areas: 
+         "bio details details"
+         "related related related";
+   }
+    .bio{
+      grid-area:bio;
+    }
+     .details{
+      grid-area:details;
+     }
+     .related-links{
+      grid-area:related;
+      border-bottom: 1px solid #999;
+      padding-bottom:50px;
+     }
+
 }
