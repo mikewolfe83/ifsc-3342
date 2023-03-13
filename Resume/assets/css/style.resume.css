@@ -58,7 +58,7 @@ html {
 
   header
 
-  .related-links a:link{
+  .related-links a:link a:hover a:visited{
     text-decoration: none;
   }
 
@@ -96,7 +96,7 @@ html {
     font-size: 20px;
     line-height: 1.625;
     color:rgb(22, 22, 21);
-    -webkit-text-stroke: .01rem rgb(236, 236, 237);
+    /* -webkit-text-stroke: .01rem rgb(236, 236, 237); */
 
   } 
 
@@ -197,8 +197,12 @@ html {
   justify-content:center;
   list-style:none;
   padding:0;
+  
+ 
 
   }
+
+  
 
   .related-links .svg-inline--fa{
     font-size:1.8em;
@@ -206,25 +210,29 @@ html {
 
   }
 
-  .realted-links a{
-    border:1px solid #0d0e77;
+  .realted-links a {
+  border:1px solid #0d0e77;
   padding:8px 16px;
   text-align:center;
   text-decoration:none;
-  color:#222222;
+  /* color:#222222; */
   text-transform:uppercase;
   font-size:.75em;
-  background:rgba(74, 132, 218, 0.801);
+  /* background:rgba(74, 132, 218, 0.801); */
   transition: background-color 0.5s ease;
   color:#fff;
   }
 
+  
+
   .related-links a:hover{
     background:rgba(92, 126, 201, 0.95);
+    
   }
 
   .realted-links li{
     margin-right:20px;
+    
   }
 
   #skills{
@@ -325,4 +333,12 @@ main.container{
       padding-bottom:50px;
      }
 
+}
+
+/* Tablet */
+
+@media screen and (min-width:769px) and (max-width:1200px){
+  .container{
+    background: #999;
+  }
 }
