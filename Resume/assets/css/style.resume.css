@@ -233,6 +233,14 @@ html {
   .realted-links li{
     margin-right:20px;
     
+    
+  }
+
+  .related-links li a{
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    
   }
 
   #skills{
@@ -340,5 +348,9 @@ main.container{
 @media screen and (min-width:769px) and (max-width:1200px){
   .container{
     background: #999;
+  }
+
+  .details{
+     
   }
 }
