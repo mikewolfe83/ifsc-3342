@@ -347,10 +347,30 @@ main.container{
 
 @media screen and (min-width:769px) and (max-width:1200px){
   .container{
-    background: #999;
+    background: rgb(6, 6, 49);
+   
+  }
+  .bio{
+    grid-area:bio;
+  }
+   .details{
+    grid-area:details;
+   }
+
+  body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.625;
+    color:rgb(240, 242, 245);
+    /* -webkit-text-stroke: .01rem rgb(236, 236, 237); */
+
+  } 
+
+  .desc{
+    
   }
 
   .details{
-     
+     background: #99999988;
   }
 }
