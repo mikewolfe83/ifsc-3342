@@ -345,7 +345,7 @@ main.container{
 
 /* Tablet */
 
-@media screen and (min-width:769px) and (max-width:1200px){
+@media screen and (min-width:769px) and (max-width:1130px){
   .container{
     background: rgb(6, 6, 49);
    
@@ -372,5 +372,37 @@ main.container{
 
   .details{
      background: #99999988;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1140px) and (max-width:2160px){
+  .container{
+    background: rgb(51, 54, 54);
+   
+  }
+  .bio{
+    grid-area:bio;
+  }
+   .details{
+    grid-area:details;
+   }
+
+  body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.625;
+    color:rgb(234, 236, 241);
+    /* -webkit-text-stroke: .01rem rgb(236, 236, 237); */
+
+  } 
+
+  .desc{
+    
+  }
+
+  .details{
+     background: #38363688;
   }
 }
