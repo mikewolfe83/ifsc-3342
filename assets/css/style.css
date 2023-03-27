@@ -12,9 +12,9 @@ html {
 
   html * {
     font-family: 'Anton', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.625;
-    color:rgb(14, 27, 88);
+    color:rgb(10, 10, 10);
     -webkit-text-stroke: .01rem rgb(252, 251, 247); 
   }
   
@@ -51,13 +51,16 @@ Column width: 215 px */
 
   main{
 	
-    width: 1900px;
-    margin: 20px;
+    margin: 0 auto;
     background-image:url(../resources/headerbanner.JPG);
 	  background-repeat: no-repeat;
     background-size:cover;
     border:1px solid black;
     /* display: flex; */
+  }
+
+  h1{
+    font-size: 25px;
   }
 
   header.primary, footer.primary{
@@ -129,12 +132,108 @@ header.primary nav ul li a{
   color:rgb(19, 17, 17);
 }
 
+h1 a{
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+ul li{
+  list-style-type: none;
+
+}
+
+
+/* --------- Media Queries --------- */
+
+@media screen and (max-width:750px){
+
+main{
+	  
+		font-family: 'Anton', sans-serif;
+    display:inline;
+    justify-content: center;
+	} 
+  header.primary h1{
+    color: rgb(128, 99, 7);
+  }
+  header.primary nav ul li a{
+    color: rgb(128, 99, 7);
+  }
+  body{
+    background-image:url(../img/Gold\ Flamingo.jpg);
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+  }
+  p{
+		color: rgb(128, 99, 7);
+	}
+  a{
+    color: rgb(128, 99, 7);
+  }
+  ul li{
+    color: rgb(128, 99, 7);
+  }
+  time{
+    color: rgb(128, 99, 7);
+  }
+  h2{
+    color: rgb(128, 99, 7);
+  }
+  div.post-meta{
+    color: rgb(128, 99, 7);
+  }
+
+
+} /* --- End Of mobile ---- */
+
+ /* Tablet */
+
+ @media screen and (min-width:755px) and (max-width:1130px){ 
+
+  main{
+	  
+		font-family: 'Anton', sans-serif;
+    display:inline;
+    justify-content: center;
+	} 
+  header.primary h1{
+    color: rgb(12, 12, 11);
+  }
+  header.primary nav ul li a{
+    color: rgb(19, 18, 16);
+  }
+  body{
+    background-image:url(../img/outside.JPG);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  p{
+		color: rgb(8, 8, 7);
+	}
+  a{
+    color: rgb(14, 13, 13);
+  }
+  ul li{
+    color: rgb(17, 17, 16);
+  }
+  time{
+    color: rgb(7, 7, 7);
+  }
+  h2{
+    color: rgb(17, 17, 16);
+  }
+  div.post-meta{
+    color: rgb(15, 15, 14);
+  }
 
 
 
+
+ }
 
    /* can not exceed 600px" */
-  @media screen and (max-width:600px)  {
+  /* @media screen and (max-width:600px)  {
 	main{
 	  
 		font-family: 'Anton', sans-serif;
@@ -153,19 +252,19 @@ header.primary nav ul li a{
 
   /* Ranged */ 
 
-@media screen and (max-width: 1900px) and (min-width: 600px) {
+/* @media screen and (max-width: 1900px) and (min-width: 600px) {
 	.blog{
 		display:inline-block; 
     width:100%;
      min-width:200px; 
      max-width:340px;
 	} 
-}
+} */
 
 /* Min Width Querey */
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
 	#blog,aside{
 		grid-template-columns: 1fr;
 	} 
-}
+} */ 
   /* End of "Micro clearfix" */
