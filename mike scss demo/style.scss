@@ -1,6 +1,30 @@
 $typeface:'Niramit', sans-serif;
-$background-color: #0a0909;
+$background-image:url(./img/Gold\ Flamingo.jpg);//  image backgorund
 $primary-color: #fae20b;
 $radius:10px;
 $margin:20px;
 
+
+//setup selectors
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body{
+    font-family:$typeface;
+    background: $background-image;
+    
+  }  
+
+  section {
+    max-width:80vw;
+    display: flex;
+    margin: $margin auto;
+    border-radius:$radius;
+    color:$primary-color;// changes color of text
+    
+  }  
