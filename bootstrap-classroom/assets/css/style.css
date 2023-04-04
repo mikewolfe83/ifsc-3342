@@ -1,0 +1,35 @@
+/* Bootstrap Classroom CSS */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  
+}
+
+
+
+body{
+	
+    
+    background-image:url(/bootstrap-classroom/assets/img/GoldFlamingo.jpg);
+	  background-repeat: no-repeat;
+    background-size:cover;
+}
+
+  nav{
+    padding-bottom: 5em;
+  }
+
+  article{
+    /* background: goldenrod;
+    background-image:url(/bootstrap-classroom/assets/img/HeaderImg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; */
+  }
+
+  .card{ 
+    justify-content: center;
+  }
