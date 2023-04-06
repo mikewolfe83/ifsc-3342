@@ -12,27 +12,38 @@
    ========================================================================== */
 
 html {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   color: #f5f3f3;
   font-size: 22px;
   line-height: 1.4;
 }
 
 body{
+  /* font-family: 'Bebas Neue', cursive;
+  color: #f5f3f3;
+  /* font-size: 22px;
+  line-height: 1.4; */ 
   background-image: url(/bootstrap-classroom-1/img/officespacebackground.jpg);
    background-repeat: no-repeat;
     background-size:cover;
 
 }
 
-p{
-  /* color: #f4f5f2;
-  -webkit-text-stroke: #000; */
-}
 
 header.primary{
-  padding-bottom: 120px;
+/* background-color: #fff; */
+padding-top: 25px;
+  padding-bottom: 40px;
 }
+
+header.primary a img{
+  
+  margin-left: 880px;
+  
+}
+
+
+
 
 /*
  * Remove text-shadow in selection highlight:
