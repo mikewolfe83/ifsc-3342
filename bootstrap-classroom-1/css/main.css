@@ -23,7 +23,7 @@ body{
   color: #f5f3f3;
   /* font-size: 22px;
   line-height: 1.4; */ 
-  background-image: url(/bootstrap-classroom-1/img/officespacebackground.jpg);
+  background-image: url("/bootstrap-classroom-1/img/officespacebackground.jpg");
    background-repeat: no-repeat;
     background-size:cover;
 
