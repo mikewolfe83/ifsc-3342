@@ -42,7 +42,24 @@ header.primary a img{
   
 }
 
+.fw-light{
+  color: #fff;
+}
 
+.lead{
+  color: #fff;
+  font-size: 22px;
+}
+
+#openor{
+  background: #1a181877;
+}
+
+.cardsize{
+  width:100%;
+  height: 280px;
+ 
+}
 
 
 /*
