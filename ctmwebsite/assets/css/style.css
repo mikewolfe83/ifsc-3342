@@ -1,0 +1,62 @@
+/* ctm Main Page CSS File     */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    
+  }
+
+  html * {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    line-height: 1.625;
+    color:rgb(8, 7, 7);
+    -webkit-text-stroke: .01rem rgb(252, 251, 247); 
+  }
+
+  body{
+    background-color: black;
+  }
+  
+  #hero{
+    background-image: url(../img/officespacebackground.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: black;
+    
+  }
+
+  .main-content{
+    padding-top: 2em;
+  }
+
+
+ /* ---------- button classes -------------- */
+
+ 
+
+
+
+
+  /* ---------- button classes -------------- */
+
+  .my-2{
+    background-color: darkred;
+  }
+
+  .btn-group{
+    background-color: darkred;
+  }
+
+  /* -----------------card classes------------------- */
+
+  .cardsize{
+    width:100%;
+    height: 280px;
+   
+  }
+  
