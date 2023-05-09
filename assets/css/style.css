@@ -142,6 +142,27 @@ ul li{
 
 }
 
+/* hamburger menu */
+
+.burger {
+  position:absolute;
+  
+  right:1rem;
+  display: none;
+  flex-direction:column;
+  justify-content: space-between;
+  width:30px;
+  height: 21px;
+}
+
+.burger .bar {
+  height: 3px;
+  width: 100%;
+  background-color:  rgb(128, 99, 7);
+  border-radius: 10px;
+  
+}
+
 
 /* --------- Media Queries --------- */
 
@@ -155,6 +176,7 @@ main{
 	} 
   header.primary h1{
     color: rgb(128, 99, 7);
+    margin-top: -5%;
   }
   header.primary nav ul li a{
     color: rgb(128, 99, 7);
@@ -173,6 +195,7 @@ main{
   }
   ul li{
     color: rgb(128, 99, 7);
+    
   }
   time{
     color: rgb(128, 99, 7);
@@ -183,6 +206,46 @@ main{
   div.post-meta{
     color: rgb(128, 99, 7);
   }
+
+   
+
+  /* burger */
+
+  .burger{
+    display:flex;
+     margin-right:25vh;
+} 
+
+nav.primary{
+  display: none;
+  width:100%;
+}
+
+nav.primary{
+  flex-direction: column ;
+  align-items: flex-start;
+}
+
+nav.primary ul{
+  width: 100% ;
+  flex-direction: column;
+}
+
+nav.primary li{
+  text-align: center;
+}
+
+nav.primary li a{
+  padding: .5rem 1rem;
+}
+
+nav.primary.active{
+  display: flex;
+}
+
+
+
+
 
 
 } /* --- End Of mobile ---- */
@@ -227,7 +290,23 @@ main{
     color: rgb(15, 15, 14);
   }
 
-
+  nav.primary{
+    flex-direction: column ;
+    align-items: flex-start;
+  }
+  
+  nav.primary ul{
+    width: 100% ;
+    flex-direction: column;
+  }
+  
+  nav.primary li{
+    text-align: center;
+  }
+  
+  nav.primary li a{
+    padding: .5rem 1rem;
+  }
 
 
  }
